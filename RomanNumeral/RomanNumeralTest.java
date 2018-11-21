@@ -17,11 +17,13 @@ public class RomanNumeralTest
 		this.decimal = decimal;
    }
 
+	
 	@Parameters
 	public static Collection<Object[]> romanValues()
 	{
-		return Arrays.asList (new Object [][] {{"V", 5}, {"MXV", 1015}, {"MXV", 5},  {"MXVI", 1015}});
+		return Arrays.asList (new Object [][] {{"V", 5}, {"MXV", 1015}, {"CD", 400}, {"MXV", 5}, {"XXX", 30}, {"XXXX", 40} , {"MXVI", 1015}, {"Z", 5}, {"5", 5}, {"VIIII", 9}});
 	}
+	
 	@Test
 	public void additionTest()
 	{
