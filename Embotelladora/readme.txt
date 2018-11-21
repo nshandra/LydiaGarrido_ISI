@@ -18,18 +18,33 @@ Ejercicio 3 - Embotelladora:
 
 3. Crear caracterizaciones y particiones en bloques.
 	
-	C1: Dos particiones.
-		b1: total - (grandes*5) >= pequenas 
-		    .vs. 
-		b2: total - (grandes*5) < pequenas
+	C1: Litros cubiertos (miCapacidad) vs. Litros totales (total)
+	Recordar:. miCapacidad=5*grandes+pequenas;
+		
+		b1: grandes, pequenas o total son negativos (captura excepción)
+		
+		b2: total > miCapacidad (captura excepción)
+		
+		b3: total <= miCapacidad y total-5*grandes<0
+		
+		b4: total <= miCapacidad y total-5*grandes>0
+		
+		b5: total <= miCapacidad y total-5*grandes=0
 
 4. Elegir valores adecuados de cada bloque.Contemplar casos frontera.
 	
-	C1: b1=[0,0,0] b2=[10,1,20]
-	Casos frontera: total - (grandes*5) = pequenas
-					grandes = 0, pequeñas = 0, total = 0
-					valores negativos vs positivos de cada parámetro
-					múltiplos de 5 de grandes.
+	C1: 
+		b1: {-1,0,3}
+		b2: {4,1,20}
+		b3: {2,5,5}
+		b4: {3,1,7}
+		b5 = {0,4,20}
+	Casos frontera: 
+		total - (grandes*5) = pequenas
+		total-5*grandes=0
+		grandes = 0, pequeñas = 0, total = 0
+		valores negativos
+		múltiplos de 5 de grandes.
 
 5. Escribir el código de pruebas con JUnit.
 	Ver EmbotelladoraTest.java
