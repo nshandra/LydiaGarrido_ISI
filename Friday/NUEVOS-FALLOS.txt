@@ -1,4 +1,4 @@
-La versión original de DEscuentoBlackFriday:
+La versión original de DescuentoBlackFriday: https://github.com/nshandra/LydiaGarrido_ISI/blob/master/Friday/DescuentoBlackFriday-orig.java
 
 Fallos:
 - No gestiona que el precio sea negativo.
@@ -12,4 +12,4 @@ Lo he encontrado con el test:
 
 	}
 Solución: lanzar excepción para el caso de introducir precio negativo.
-La version final de DescuentoBlackFriday:
+La version final de DescuentoBlackFriday: https://github.com/nshandra/LydiaGarrido_ISI/blob/master/Friday/DescuentoBlackFriday.java
