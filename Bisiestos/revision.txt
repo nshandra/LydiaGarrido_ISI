@@ -1,3 +1,0 @@
-Distinto tipo de excepción lanzada a la hora de manejar años negativos.
-Solución: cambiar el tipo de excepción o bien en mi test o bien en el su código. Mejor en mi test porque la excepción IllegalArgument que yo habia usado extiende de la Runtime Exception que ellos plantean.
-

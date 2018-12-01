@@ -1,0 +1,15 @@
+La versión original de Bisiestos: https://github.com/nshandra/LydiaGarrido_ISI/blob/master/Bisiestos/Bisiestos.java
+
+Fallos:
+- Distinto tipo de excepción lanzada a la hora de manejar años negativos.
+Lo he encontrado con el test:
+		//Test 2
+	@Test (expected = IllegalArgumentException.class)
+	public void testNegativeYear() {
+		year = -2000;
+		bis.esBisiesto(year);
+	}
+Solución: cambiar el tipo de excepción o bien en mi test o bien en el su código. Mejor en mi test porque la excepción IllegalArgument que yo habia usado extiende de la Runtime Exception que ellos plantean.
+
+La versión nueva de mi test: https://github.com/nshandra/LydiaGarrido_ISI/blob/master/Bisiestos/BisiestosTest.java
+
