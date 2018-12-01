@@ -1,0 +1,15 @@
+La versión original de DEscuentoBlackFriday:
+
+Fallos:
+- No gestiona que el precio sea negativo.
+
+Lo he encontrado con el test:
+	//Test 2
+	@Test (expected = IllegalArgumentException.class)
+	public void testNonPositivePrice(){
+		price = -59.99;
+		dbf.PrecioFinal(price);
+
+	}
+Solución: lanzar excepción para el caso de introducir precio negativo.
+La version final de DescuentoBlackFriday:
