@@ -14,16 +14,20 @@ public class Embotelladora {
 		int pequenasMinimiz;
 		
 		if (pequenas < 0 || grandes < 0 || total < 0) {
-			return -1; // throw new RuntimeException("Error: valores negativos");
+			throw new RuntimeException("Error: valores negativos");
 		}
 		miCapacidad = 5*grandes + pequenas;
 		if (total > miCapacidad) {
-			return -1; // throw new RuntimeException("Error: botellas insuficientes");
+			throw new RuntimeException("Error: botellas insuficientes");
 		}
 		pequenasMinimiz = total - 5*grandes;
 		if (pequenasMinimiz <= 0){
 			return pequenasMinimiz = 0;
 		}
 		return pequenasMinimiz;
+	}
+
+	public static void main(String[] args) {
+		;
 	}
 }

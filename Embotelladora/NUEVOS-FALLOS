@@ -1,0 +1,12 @@
+Embotelladora:
+Se ha modificado la excepcion de parametros negativos y de total mayor a nº de botellas por return -1 para que sea posible realizar data driven test.
+
+Linea 30: Borrado main vacio.
+
+No hay errores.
+
+Versión original:
+https://github.com/nshandra/LydiaGarrido_ISI/blob/master/Embotelladora/Embotelladora-orig.java
+
+Versión corregida:
+https://github.com/nshandra/LydiaGarrido_ISI/blob/master/Embotelladora/Embotelladora.java
